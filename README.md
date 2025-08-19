@@ -1,57 +1,31 @@
-# Selenium-Auto-Login-Script
-A simple Selenium script to automate website login -- my first hands-on project.
+# College Wi-Fi Auto Login
 
-## 📌 Overview
+This project automates the login process for a college Wi-Fi portal using **Python + Selenium**.
 
-This was my **first real application project**.
-I built a simple Python script using **Selenium** to automate the login process on a website.
-The main goal was to understand how browser automation works and how Selenium can interact with web elements like forms, buttons, and cookies.
-Even though it’s small, this project gave me confidence to move on to bigger things (like building an MCP server 🚀).
+## Motivation
 
----
+My college Wi-Fi network required logging in repeatedly after short intervals, which was inconvenient.
+I built this script as my **first real-world application project**, to save time and effort by automatically handling the login process.
 
-## ⚡ Features
+## Features
 
-* Automates opening a browser and navigating to a login page
-* Inputs username and password automatically
-* Submits the login form
-* (Optional) Handles wait times and errors gracefully
+* Automates entering username and password into the login form
+* Works with Selenium WebDriver (tested with Chrome)
+* Can be customized for similar Wi-Fi portals with minimal changes
 
----
+## How it works
 
-## 🛠️ Tech Stack
+1. Script launches a browser using Selenium
+2. Navigates to the Wi-Fi login portal page
+3. Inputs credentials (stored securely in the script or via environment variables)
+4. Submits the form automatically
 
-* **Python**
-* **Selenium WebDriver**
-* **ChromeDriver / GeckoDriver** (depending on browser)
+## Requirements
 
----
+* Python 3.x
+* Selenium
+* WebDriver for your browser (e.g., ChromeDriver)
 
-## ▶️ How to Run
+## Note
 
-1. Install requirements:
-
-   pip install selenium
-   
-3. Download a matching browser driver (e.g., ChromeDriver) and place it in your PATH.
-
-4. Update the script with your test login details (⚠️ **Never hardcode real credentials if pushing code publicly**).
-
-5. Run the script:
-
-   python auto_login.py
-
-## 🚀 Learnings
-
-* Interacting with web elements using XPath, CSS selectors, and IDs
-* Handling delays with **explicit and implicit waits**
-* Debugging automation scripts when websites change their structure
-* Understanding the importance of safe credential handling
-
----
-
-## 🌱 Next Steps
-
-* Automate filling out forms beyond login
-* Add support for multiple websites
-* Integrate with a password manager API for safe credential handling
+⚠️ This script is for educational purposes only. Credentials and network details should never be shared publicly.
