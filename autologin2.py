@@ -20,13 +20,13 @@ try:
     username_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.NAME, "username"))
     )
-    username_field.send_keys("4SI24IS046")  # Replace with your actual username
+    username_field.send_keys("YOUR_USN")  # Replace with your actual username
 
     # Wait for and fill in the password field
     password_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.NAME, "password"))
     )
-    password_field.send_keys("11649O13")  # Replace with your actual password
+    password_field.send_keys("YOUR_PASSWORD")  # Replace with your actual password
 
     # Wait for the login button and click it
     login_button = WebDriverWait(driver, 10).until(
@@ -49,3 +49,4 @@ except Exception as e:
 
 finally:
     driver.quit()  # Close the browser after completion
+
